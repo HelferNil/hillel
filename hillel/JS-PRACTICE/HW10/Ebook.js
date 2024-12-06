@@ -23,23 +23,19 @@ export class Ebook extends Book {
         Рік: ${this._book_year}, Формат файлу: ${this._book_format}`);
   }
 
-static digitalization(paperBook, format) {
-let newEbook = new Ebook ({...paperBook});
-newEbook._book_format = format;
-return(newEbook);
+  static digitalization(paperBook, format) {
+    const newEbook = new Ebook(
+      paperBook.book_name,
+      paperBook.book_author,
+      paperBook.book_year, 
+      format
+    );
+    return newEbook;
+  }
 }
-}
+//
 
-
-
-
-
-//Debug:
-// const ebook1 = new Ebook("Володар перців", "Мартін Лютий Кінг", 1982, "PDF");
-// ebook1.printInfo();
-// console.log(ebook1.book_format)
-
-// const book = new Book("Володар перців","Рікі Мартін Кінг", 1980);
-// const format = "txt";
-//let eBook1 =  Ebook.digitalization(book, format);
-//console.log("Нова книга: "  + eBook1);
+const book1 = new Book("Володар перців", "Рікі Мартін Кінг", 1980);
+const format = "txt";
+let ebook1 = Ebook.digitalization(book1, format);
+ebook1.printInfo();

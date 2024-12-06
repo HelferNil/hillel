@@ -1,2 +1,3 @@
-console.log('Goodbye cruel world!');
-let unusedVar;
+console.log ("Goodbye cruel world!");
+let unusedVariable ;
+ console.log('uberquotes')

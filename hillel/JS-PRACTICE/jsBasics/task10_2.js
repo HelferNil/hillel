@@ -32,7 +32,7 @@ Promise.all(todos)
     console.log(errors);
   });
 
-Promise.all(users)
+Promise.race(users)
   .then((results) => {
     let promise1 = results;
     console.log(promise1);

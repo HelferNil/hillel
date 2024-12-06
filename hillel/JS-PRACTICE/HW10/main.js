@@ -2,18 +2,18 @@ import { Book } from "./Book.js";
 import { Ebook } from "./Ebook.js";
 
 //Конструктори
-const book = new Book("Володар перців", "Рікі Мартін Кінг", 1980);
-console.log(book);
-book.printInfo();
+// const book = new Book("Володар перців", "Рікі Мартін Кінг", 1980);
+// console.log(book);
+// book.printInfo();
 
-const ebook = new Ebook(
-  "Матриця 4. Перенедозавантаження",
-  "Нейромережа INC",
-  2024,
-  "FB2"
-);
-console.log(ebook);
-ebook.printInfo();
+// const ebook = new Ebook(
+//   "Матриця 4. Перенедозавантаження",
+//   "Нейромережа INC",
+//   2024,
+//   "FB2"
+// );
+// console.log(ebook);
+// ebook.printInfo();
 
 const books = [
   {
@@ -40,7 +40,7 @@ const books = [
   {
     book_name: "Термодинаміка для чайників",
     book_author: "Ошпаренко Геннадій Геннадійович",
-    book_year: 1502,
+    book_year: 1402,
     book_format: "pdf",
   },
 ];
@@ -50,6 +50,7 @@ console.log("Найстаріша книга:", oldest);
 const book1 = new Book("Володар перців", "Рікі Мартін Кінг", 1980);
 const format = "txt";
 let ebook1 = Ebook.digitalization(book1, format);
-console.log(ebook1);
+ebook1.printInfo();
 //Перевірка на класс, має бути true
-//console.log(ebook1.constructor === Ebook); 
+//console.log(ebook1.constructor === Ebook);
+// 
