@@ -6,9 +6,11 @@ console.clear();
 // Виведіть усі змінні в консоль
 
 let customerAge = 15;
-let isAdult = customerAge>=18;
-console.log("Петро Свинопасенко повнолітній? Йому зараз " + customerAge + " років. " + isAdult);
+let isAdult = customerAge >= 18;
+console.log('Петро Свинопасенко повнолітній? Йому зараз ' + customerAge + ' років. ' + isAdult);
 
-customerAge=customerAge+5;
-isAdult = customerAge>=18;
-console.log("А чи буде Петро Свинопасенко повнолітнім через 5 років? Йому вже буде " + customerAge+" років. " + isAdult);
+customerAge = customerAge + 5;
+isAdult = customerAge >= 18;
+console.log(
+	'А чи буде Петро Свинопасенко повнолітнім через 5 років? Йому вже буде ' + customerAge + ' років. ' + isAdult,
+);

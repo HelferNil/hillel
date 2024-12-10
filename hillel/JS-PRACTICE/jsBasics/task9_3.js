@@ -11,15 +11,15 @@
 // Виведіть об'єкт car3 в консоль.
 
 const car1 = {
-  brand: "Tesla",
-  model: "Model X",
-  year: 2022,
+	brand: 'Tesla',
+	model: 'Model X',
+	year: 2022,
 };
 
 const car2 = {
-  brand: "Batmobile",
-  model: "Speedy car",
-  owner: "Bruce Wayne",
+	brand: 'Batmobile',
+	model: 'Speedy car',
+	owner: 'Bruce Wayne',
 };
 
 const car3 = { ...car2, ...car1 }; //другий параметр при співпадінні ключа перезапише перший.

@@ -10,17 +10,17 @@
 // Викличте функцію handleNum і передайте в якості аргументів довільне число і дві функції які ви створили раніше
 
 function handleNum(num, callbackEven, callbackOdd) {
-  if (num % 2 === 0) {
-    return callbackEven(num);
-  } else {
-    callbackOdd(num);
-  }
+	if (num % 2 === 0) {
+		return callbackEven(num);
+	} else {
+		callbackOdd(num);
+	}
 }
 function handleEven(num) {
-  console.log(`Число ${num} парне.`);
+	console.log(`Число ${num} парне.`);
 }
 function handleOdd(num) {
-  console.log(`Число ${num} непарне.`);
+	console.log(`Число ${num} непарне.`);
 }
 
 handleNum(56, handleEven, handleOdd);

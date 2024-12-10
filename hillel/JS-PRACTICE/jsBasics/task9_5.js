@@ -6,35 +6,28 @@
 // Зробіть деструктуризацію в циклі
 
 users = [
-  {
-    name: "Big Ben",
-    age: 23,
-    "phonk number": "Do-do-doo-123",
-    "eyes color": "red",
-  },
-  {
-    name: "Tarasiuk Ivanenko",
-    age: 55,
-    "phonk number": "23-32-222-666",
-    "eyes color": "green",
-  },
-  {
-    name: "Zhadan Petro",
-    age: 5,
-    "phonk number": null,
-    "eyes color": "sky blue",
-  },
+	{
+		name: 'Big Ben',
+		age: 23,
+		'phonk number': 'Do-do-doo-123',
+		'eyes color': 'red',
+	},
+	{
+		name: 'Tarasiuk Ivanenko',
+		age: 55,
+		'phonk number': '23-32-222-666',
+		'eyes color': 'green',
+	},
+	{
+		name: 'Zhadan Petro',
+		age: 5,
+		'phonk number': null,
+		'eyes color': 'sky blue',
+	},
 ];
 
 for (user of users) {
-  const {
-    name,
-    age,
-    "phonk number": phonk_number,
-    "eyes color": eyes_color,
-  } = user;
-  
-  console.log(
-    `User name: ${name}. User age: ${age}. Phone number: ${phonk_number}. Eyes color: ${eyes_color}.`
-  );
+	const { name, age, 'phonk number': phonk_number, 'eyes color': eyes_color } = user;
+
+	console.log(`User name: ${name}. User age: ${age}. Phone number: ${phonk_number}. Eyes color: ${eyes_color}.`);
 }

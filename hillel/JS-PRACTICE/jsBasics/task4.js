@@ -6,7 +6,7 @@ console.clear();
 // Створіть змінну radius і присвойте їй числове значення радіуса кола.
 // Обчисліть площу кола за формулою π * radius^2 і виведіть результат.
 let radius = 4.4;
-console.log("Довжина окружності кола з радіусом " + radius + " = "+ (Math.PI*radius*radius).toFixed(2));
+console.log('Довжина окружності кола з радіусом ' + radius + ' = ' + (Math.PI * radius * radius).toFixed(2));
 
 // Завдання 4.2
 
@@ -15,7 +15,7 @@ console.log("Довжина окружності кола з радіусом " 
 // Обчисліть площу прямокутника за формулою length * width і виведіть результат.
 let lenght = 5;
 let width = 8.123;
-console.log("Площа прямокутника зі сторонами " + lenght + " та "+width+" дорівнює " + (lenght*width).toFixed(2));
+console.log('Площа прямокутника зі сторонами ' + lenght + ' та ' + width + ' дорівнює ' + (lenght * width).toFixed(2));
 
 // Завдання 4.3
 
@@ -25,4 +25,11 @@ console.log("Площа прямокутника зі сторонами " + len
 
 radius = 4.15;
 let height = 8.2155;
-console.log("Об'єм циліндру з радіусом " + radius+" та висотою " + height + " дорівнює " + (Math.PI*radius*radius*height).toFixed(2));
+console.log(
+	"Об'єм циліндру з радіусом " +
+		radius +
+		' та висотою ' +
+		height +
+		' дорівнює ' +
+		(Math.PI * radius * radius * height).toFixed(2),
+);
