@@ -14,16 +14,16 @@ let negativeCount = 0;
 let zeroCount = 0;
 
 for (i = 0; i <= numbers.length; i++) {
-  if (Number(numbers[i]) > 0) {
-    positiveCount++;
-  }
-  if (Number(numbers[i]) < 0) {
-    negativeCount++;
-  }
-  if (Number(numbers[i]) == 0) {
-    zeroCount++;
-  }
+	if (Number(numbers[i]) > 0) {
+		positiveCount++;
+	}
+	if (Number(numbers[i]) < 0) {
+		negativeCount++;
+	}
+	if (Number(numbers[i]) == 0) {
+		zeroCount++;
+	}
 }
 console.log(
-  `Позитивних чисел ${positiveCount}, негативних чисел ${negativeCount} та нулів ${zeroCount} у масиві ${numbers}`
+	`Позитивних чисел ${positiveCount}, негативних чисел ${negativeCount} та нулів ${zeroCount} у масиві ${numbers}`,
 );

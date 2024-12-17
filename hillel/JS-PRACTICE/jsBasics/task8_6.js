@@ -13,5 +13,5 @@ let sortedNumbers = [];
 sortedNumbers = numbersList.slice(0);
 sortedNumbers.sort((a, b) => a - b);
 
-console.log("Несортований масив: " + numbersList);
-console.log("Посортований масив: " + sortedNumbers);
+console.log('Несортований масив: ' + numbersList);
+console.log('Посортований масив: ' + sortedNumbers);

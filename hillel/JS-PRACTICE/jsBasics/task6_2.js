@@ -7,13 +7,13 @@
 
 const isAdult = (age) => age >= 18;
 console.log(isAdult(25), isAdult(15));
-console.log("=========================");
+console.log('=========================');
 
 //Викличте вашу функцію з аргументами 25 і 15 - отут не поняв, послідовно чи одночасно, зробив і так, і так
-function isAdultExtended(...arguments) {
-  for (let i = 0; i < arguments.length; i++) {
-    console.log(arguments[i] <= 18);
-  }
+function isAdultExtended(...args) {
+	for (let i = 0; i < args.length; i++) {
+		console.log(args[i] <= 18);
+	}
 }
 
 isAdultExtended(0, 15, 18, 25);

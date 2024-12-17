@@ -7,11 +7,11 @@
 // Видаліть властивість age з об'єкта person.
 // Виведіть оновлений об'єкт person в консоль.
 const person = {
-  firstName: "Johntra",
-  lastName: "Volta",
-  age: 65,
+	firstName: 'Johntra',
+	lastName: 'Volta',
+	age: 65,
 };
-person.email = "VoltaJohn@gmail.com";
+person.email = 'VoltaJohn@gmail.com';
 delete person.age;
 
 console.log(person);

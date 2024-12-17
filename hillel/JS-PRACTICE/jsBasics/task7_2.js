@@ -7,8 +7,8 @@
 // Викличте вашу функцію з аргументом, наприклад, 5, щоб почати рекурсивний лічильник.
 
 function burn(num) {
-  console.log(num);
-  if (num-- >= 0) return burn(num);
+	console.log(num);
+	if (num-- >= 0) return burn(num);
 }
 
 burn(5);
