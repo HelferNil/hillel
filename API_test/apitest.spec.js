@@ -57,9 +57,8 @@ describe('UPDATE', () => {
 
 describe('DELETE', () => {
 	test('Delete todo', async () => {
-		const response = await axios.put(
-			'https://jsonplaceholder.typicode.com/posts/1');
+		const response = await axios.put('https://jsonplaceholder.typicode.com/posts/1');
 		console.log(await response.data);
-		expect(response.status).toEqual(201);//200 is OK, просто щоб впало
+		expect(response.status).toEqual(201); //200 is OK, просто щоб впало
 	});
 });
